@@ -1,0 +1,135 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Main product list container */
+  .product-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align products to the top */
+    padding: 20px;
+    max-height: 80vh; /* Allow the product list to take up most of the viewport height */
+    overflow-y: auto; /* Enable scrolling for the product list */
+    margin-bottom: 20px; /* Add space at the bottom */
+    scroll-behavior: smooth; /* Smooth scroll when navigating */
+  }
+  
+  /* Product card */
+  .product-card {
+    height: 450px;
+    width: 350px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .product-card .wishlist {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  .product-card .p_image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .product-card .price {
+    font-size: 1.2rem;
+    color: #ff5722;
+    margin-top: 10px;
+  }
+  
+  /* Button styles */
+  .s_btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .s_btn:hover {
+    background: #444;
+  }
+  
+  /* Link Buttons (Go to Cart, Go to Wishlist) */
+  .s_btn + .s_btn {
+    margin-left: 10px;
+  }
+  
+  /* Optional: For non-overflowing body */
+  body {
+    overflow-y: auto; /* Ensures the whole page is scrollable */
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-btn {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .quantity-controls span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

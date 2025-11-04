@@ -1,0 +1,233 @@
+/* .cart-item{
+    height: 450px;
+    position: relative;
+    width: 400px;
+    color: black;
+    overflow-y: scroll;
+    scrollbar-width:none;
+}
+.cart-page{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 30px;
+}
+.cart-item img{
+    height: 50%;
+}
+.cart-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cont_btn{
+    width:max-content;
+    padding: 10px;
+    height:max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    border:none;
+    margin:auto;
+    margin-bottom: 50px;
+}
+.btn_last{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+.cart-total{
+    border: 2px solid #218838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width:auto;
+    margin:20px 10px;
+}
+.cart-total button{
+    margin-top: 55px;
+} */
+
+/* General Styling for Cart Page */
+.cart-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .cart-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cart-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cart-item h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .cart-item p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .cart-item .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .s_btn2 {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .s_btn2:hover {
+    background-color: #ff2a3b;
+  }
+  
+  /* Total Price Section */
+  .cart-total {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-total h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .btn_last {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cont_btn {
+    background-color: #3b7ad2;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cont_btn:hover {
+    background-color: #1a5fa3;
+  }
+  
+  /* Empty Cart Message */
+  .cart-page p {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .btn_last {
+      flex-direction: column;
+    }
+  
+    .cont_btn {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Remove from Cart Button */
+.s_btn2 {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .s_btn2:hover {
+    background-color: #ff2a3b;
+    transform: scale(1.05);  /* Subtle scale animation */
+  }
+  
+  .s_btn2:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+  }
+  
+  .s_btn2 svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;  /* Icon color */
+  }
+  
+  /* Optional: Style for the button text */
+  .s_btn2 span {
+    font-weight: bold;
+  }
+  
+  

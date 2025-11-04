@@ -1,0 +1,113 @@
+/* General Styles */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* About Header */
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  .mission-statement {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 10px auto 0;
+  }
+  
+ /* Team Section */
+.team-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center; /* Center text for headings */
+  }
+  
+  .team-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  /* Profiles Container */
+  .profiles-container {
+    display: flex;
+    justify-content: space-between; /* Space between profile parts */
+    align-items: flex-start; /* Align items at the start */
+    max-width: 1000px; /* Max width of the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Profile Part */
+  .profile-part {
+    flex: 1; /* Each part takes equal space */
+    margin: 0 15px; /* Space between parts */
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content inside card */
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px; /* Center the image */
+    border: 2px solid #4a90e2;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .profiles-container {
+      flex-direction: column; /* Stack profiles on smaller screens */
+      align-items: center; /* Center the parts */
+    }
+  
+    .profile-part {
+      margin: 10px 0; /* Space between stacked parts */
+    }
+  
+    .profile-card {
+      width: 90%; /* Full width for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 40px;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-bar {
+  position: relative;
+  flex: 1;
+  margin: 0 20px;
+  max-width: 400px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  z-index: 999;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.search-suggestion {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.search-suggestion:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-links,
+.nav-links-mobile {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.nav-links li {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links .active-link {
+  color: #1abc9c;
+  font-weight: 600;
+  border-bottom: 2px solid #1abc9c;
+}
+
+.logout-btn {
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
