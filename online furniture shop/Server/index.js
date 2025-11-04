@@ -13,7 +13,7 @@ app.use('/api/admin', adminAuthRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/admins', adminRoutes);
 
-const uri = 'mongodb+srv://palladeepika6305:NBv5lSslX066vJm4@deepika.5lwco.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb';
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
